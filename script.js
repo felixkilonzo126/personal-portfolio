@@ -28,3 +28,25 @@ function typeEffect() {
 }
 
 typeEffect();
+function confirmDownload() {
+    const confirmed = confirm("Proceed to download CV?");
+    if (confirmed) {
+      // Trigger download manually
+      const link = document.createElement("a");
+      link.href = "assets/FELIX_KILONZO_CV.pdf";
+      link.download = "FELIX_KILONZO_CV.pdf";
+      link.click();
+
+      // Show success message
+      const message = document.getElementById("success-message");
+      message.style.display = "block";
+
+      // Optional: Hide message after 5 seconds
+      setTimeout(() => {
+        message.style.display = "none";
+      }, 5000);
+    }
+  }
+
+
+

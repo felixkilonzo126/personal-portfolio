@@ -230,6 +230,15 @@ width: 100%;
 #skills li {
   line-height: 1.5;
 }
+#contact-info{
+  color: #00ffff;
+}
+#contact-info p{
+  color: #007b5e;
+}
+#contact-info ul{
+  padding-left: 10px;
+}
 #contact-form {
   background: #0f2027; /* same dark gradient tone */
   padding: 60px 20px;
@@ -399,7 +408,6 @@ width: 100%;
   cursor: pointer;
   z-index: 1000;
 }
-
 
 
 

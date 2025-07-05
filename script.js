@@ -48,5 +48,14 @@ function confirmDownload() {
     }
   }
 
+document.querySelectorAll('.service-image').forEach((img) => {
+  img.addEventListener('mouseenter', () => {
+    img.classList.add('shake-effect');
+  });
+
+  img.addEventListener('animationend', () => {
+    img.classList.remove('shake-effect');
+  });
+});
 
 
